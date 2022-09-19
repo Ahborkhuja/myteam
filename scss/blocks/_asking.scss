@@ -1,0 +1,43 @@
+.asking {
+  background-color: $LC;
+  padding: 76px 96px;
+  background-image: url("../images/backgroundImages/foot_bg.svg");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 80px);
+}
+
+.asking__inner {
+  @include dis_fle;
+  flex-direction: row;
+}
+
+.asking__inner h2 {
+  @include h2($SSG);
+}
+
+.asking__contact_link {
+  @include btn($SSG, 2px solid $SSG);
+}
+
+@media screen and (max-width:1100px) {
+  .asking {
+    background-position: left calc(50% + 110px);
+    padding: 84px 0;
+  }
+
+  .asking__inner h2 {
+    @include text_third($DG);
+  }
+}
+
+@media screen and (max-width:560px) {
+  .asking__inner {
+    flex-direction: column;
+  }
+
+  .asking__inner h2{
+    text-align: center;
+    max-width: 200px;
+    margin-bottom: 24px;
+  }
+}

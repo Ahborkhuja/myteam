@@ -1,0 +1,47 @@
+.meet{
+  background-color: #004047;
+  background-image: url("/images/backgroundImages/about>meet>bg.svg"),url("/images/backgroundImages/about>meet>bg-second.svg");
+  background-repeat: no-repeat;
+  background-position: left top,right bottom;
+}
+.meet-title{
+  padding-top: 140px;
+}
+.meet-title h2{
+  font-weight: 700;
+font-size: 48px;
+line-height: 48px;
+text-align: center;
+color: #FFFFFF;
+}
+.directors-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.director{
+  background-color: #012F34;
+  max-width: 350px;
+}
+.director-wrap{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.director-wrap img{
+  display: flex;
+  justify-content: center;
+}
+.name{
+  display: flex;
+  justify-content: center;
+}
+.job{
+  display: flex;
+  justify-content: center;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+}
