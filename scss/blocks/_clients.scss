@@ -1,0 +1,22 @@
+.clients {
+  background-image: url("../../images/backgroundImages/clients_bg.svg");
+  background-repeat: no-repeat;
+  background-color: $SSG;
+}
+
+.clients__inner {
+  padding: 140px 0;
+  @include dis_fle(center,center);
+  flex-direction: column;
+  width: 100%;
+}
+
+.clients__inner h2 {
+  @include h2(white, center);
+  margin-bottom: 64px;
+}
+.clients__list{
+  max-width:1094px;
+  width: 100%;
+  @include dis-fle;
+}

@@ -1,47 +1,77 @@
-.meet{
-  background-color: #004047;
-  background-image: url("/images/backgroundImages/about>meet>bg.svg"),url("/images/backgroundImages/about>meet>bg-second.svg");
+.meet {
+  background-color: $DJG;
+  background-image: url("/images/backgroundImages/about>meet>bg.svg"), url("/images/backgroundImages/about>meet>bg-second.svg");
   background-repeat: no-repeat;
-  background-position: left top,right bottom;
+  background-position: left top, right calc(50% + 570px);
 }
-.meet-title{
+
+.meet__title {
   padding-top: 140px;
+  margin-bottom: 48px;
 }
-.meet-title h2{
-  font-weight: 700;
-font-size: 48px;
-line-height: 48px;
-text-align: center;
-color: #FFFFFF;
+
+.meet__title h2 {
+  @include h2(white, center);
 }
-.directors-list{
-  display: flex;
+
+.meet__directors_list {
+  @include dis_fle;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+  padding-bottom: 100px;
 }
-.director{
-  background-color: #012F34;
+
+.meet__director {
+  margin-left: 11px;
+  margin-bottom: 48px;
+  background-color: $SSG;
   max-width: 350px;
 }
-.director-wrap{
-  display: flex;
-  justify-content: center;
+
+.meet__director_wrap {
+  padding: 32px 24px 0 24px;
+  width: 281px;
+  @include dis_fle(center,center);
+
   flex-direction: column;
 }
-.director-wrap img{
+
+.meet__img {
+  max-width: 96px;
   display: flex;
   justify-content: center;
+  margin-bottom: 16px;
 }
-.name{
-  display: flex;
-  justify-content: center;
+
+.meet__name {
+  @include dis_fle(center,center);
+
+  @include h3($RB);
 }
-.job{
-  display: flex;
-  justify-content: center;
+
+.meet__job {
+  @include dis_fle(center,center);
+
+  padding-bottom: 28px;
+  @include text_second(white,center);
 }
-.btn{
-  display: flex;
-  justify-content: center;
+
+.meet__btn {
+  margin-bottom: -28px;
+  font-size: 56px;
+  @include dis_fle(center,center);
+  color: $LC;
+}
+.meet__btn:hover{
+  color:$RB;
+}
+.meet__link {
+  margin-top: 12px;
+  margin-bottom: 11px;
+@include dis_fle;
+}
+.meet__link a{
+  @include icon_link;
+}
+.meet__link a:hover{
+  color: $LC;
 }

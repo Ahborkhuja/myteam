@@ -1,0 +1,76 @@
+.about_hero {
+  background-image: url("../images/backgroundImages/about>hero>bg.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.about_hero__inner {
+  @include dis_fle;
+  padding-bottom: 200px;
+}
+
+.about_hero__title span {
+  color: $LC;
+}
+
+.about_hero__title {
+  @include h1_L(white);
+  font-size: 64px;
+}
+
+.about_hero__text_wrap {
+  max-width: 500px;
+}
+
+.about_hero__line {
+  max-width: 50px;
+  height: 4px;
+  display: block;
+  border-radius: 10px;
+  background-color: $LC;
+  margin-bottom: 79px;
+}
+
+.about_hero__text {
+  @include h3(white, left);
+}
+
+@media screen and (max-width:1100px) {
+  .about_hero {
+    background-position: bottom right;
+  }
+
+  .about_hero__inner {
+    flex-direction: column;
+  }
+
+  .about_hero__title {
+    margin-bottom: 24px;
+    @include h1_S(white, center);
+  }
+
+  .about_hero__line {
+    display: none;
+  }
+
+  .about_hero__text {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:560px) {
+  .about_hero__ {
+    background-image: url("");
+  }
+
+  .about_hero__inner {
+    background-position: bottom center;
+    background-size: contain;
+    flex-direction: column;
+  }
+
+  .about_hero__text {
+    margin-bottom: 90px;
+  }
+}

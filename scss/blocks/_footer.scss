@@ -30,7 +30,9 @@
 .site_footer__link {
   @include text_first(white);
 }
-
+.site_footer__link:hover {
+  color: $LC;
+}    
 .site_footer__address {
   margin-left: 110px;
   max-width: 170px;
@@ -74,25 +76,30 @@
     @include dis_fle;
     width: 100%;
   }
-  .site_footer__inform{
+
+  .site_footer__inform {
     max-width: none;
   }
+
   .site_footer__icons_copy p {
     margin: 0;
   }
 }
+
 @media screen and (max-width:560px) {
-  .site_footer__icons_copy{
+  .site_footer__icons_copy {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .site_footer__inform{
+
+  .site_footer__inform {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .site_footer__address{
+
+  .site_footer__address {
     margin: 0;
   }
 }
