@@ -2,7 +2,7 @@
   padding-top: 140px;
   padding-bottom: 140px;
   background-image: url("../images/backgroundImages/bg4_first.svg"), url("../images/backgroundImages/bg4-third.svg");
-  background-position: left top, right bottom;
+  background-position: left top, right calc(50% + 383px);
   background-repeat: no-repeat;
 }
 
@@ -80,6 +80,9 @@
 }
 
 @media screen and (max-width:560px) {
+  .inform{
+    background-position: left top, right calc(50% + 922px);
+  }
   .inform__item {
     margin-top: 48px;
   }
